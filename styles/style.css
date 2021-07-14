@@ -2,22 +2,27 @@
 body{
     font-family: 'Poppins', sans-serif;
     background-color:#EFEFEE;
+    margin-bottom: -11px;   
+    margin-top: -1px;
+    margin-left: -1px;
+   
 }
-
+ header{
+    width: 1440px;
+    height: 677px;
+    background: #2D25A0;   
+ }
 
 /* banner blue color background style */
 .slogan{
     /* position: absolute; */
-    width: 1440px;
-    height: 677px;
-    background: #2D25A0;   
+   
 }
 /* banner style */
 .Heading-Slogan-Image{
     display: flex;
     justify-content: center;
-    /* padding-right: 80px; 
-    padding-top: 137px; */
+   
 }
 /* banner slogan style */
 .Copa-America{
@@ -54,6 +59,10 @@ body{
     background-image: linear-gradient(rgba(247, 97, 59, 0.911),rgb(255, 251, 1));
     color: rgba(255, 255, 255, 1);
     box-shadow: 0 5px 10px rgba(243, 72, 4, 0.842);
+}
+.fa-arrow-right{
+ font-size: 15px;
+ padding-left:5px;
 }
  
 
@@ -93,14 +102,24 @@ body{
 }
 
 .player-information{
+    display: relative;
     width: 330px;
     height: 474px;
     left: 180px;
     top: 747px;
     background: #FFFFFF;
     border-radius: 10px;
-    text-align:left
+    text-align:center;
+    margin: 10px 0px;
 
+}
+/* player information paragraph style */
+
+  
+.player-information p{
+    text-align: center;
+margin-left: 15px;
+margin-right: 15px;  
 }
 /* player information box style */
 .player-information img{
@@ -118,9 +137,7 @@ h3{
     font-size: 28px;
     line-height: 40px;
     align-self: stretch;
-    margin: 10px 0px;
-    padding-bottom: 74px;
-    padding-left: 30px;
+    margin-bottom:-5px;
 }
 
 /* Latest News Style  */
@@ -137,7 +154,7 @@ h3{
   
     width: 567px;
     height: 427px;
-    padding-left: 69px;
+    padding-left: 0px;
     /* padding-top: 2889px; */ 
 }
 
@@ -146,6 +163,7 @@ h3{
     width: 466px;
     height: 309px;
     padding-top: 59px;
+    padding-right:69px;
    
 }
 
@@ -166,19 +184,54 @@ h3{
     padding: 10px 30px;
     border-radius: 10px;
 }
+/* news icon style */
+.fa-newspaper{
+    font-size: 15px;
+    padding-left:5px;
+}
 .News-Button:hover{
-       
+        background-image: linear-gradient(rgba(255, 51, 0, 0.911),rgb(255, 166, 1));   
         color: rgba(255, 255, 255, 1);
         box-shadow: 0 5px 10px rgba(208, 255, 0, 0.609);
         
 }
+.Writing{
+    position: absolute;
+    width: 567px;
+    height: 427px;
+    left: 70px;
+    display: none;
 
-/* footer style */
-footer{
-   
-    width:1440px;
-    background-color: rgba(65, 105, 225, 0.657);    
 }
+.Writing h1{
+    margin-top: 60px;
+    margin-left: 40px;
+    margin-right: 40px;
+    text-align: center;
+}
+.Writing p{
+    
+    margin-left: 40px;
+    margin-right: 40px;
+    text-align: center;
+}
+.Latest-News-Color:hover{
+    color: orangered;
+    text-shadow: 0 5px 10px rgba(238, 255, 0, 0.815);
+}
+
+.Image-hover{
+    position: relative;
+    overflow: hidden;
+    
+    }
+.Image-hover:hover .Writing{
+        display: block;
+        background-color: rgba(0, 0, 0, 0.651);
+        color:white;
+    }  
+/* footer style */
+
 /* footer football and logo style */
 .footer-football-name{
     display: flex;
@@ -197,15 +250,103 @@ footer{
     font-weight: normal;
     font-size: 72px;
     line-height: 72px;
-   color: rgb(0, 0, 126);
+    color: rgb(0, 0, 126);
+    padding-bottom: 20px;
     padding-top: 65px;
     padding-left: 30px;
-letter-spacing: 2.01613px;
+    letter-spacing: 2.01613px;
+}
+/* footer icon style */
+
+.footer-icon{
+    display: flex;
+    color: rgba(34, 23, 59, 0.712);
+    margin-top:10px;
+    margin-left: 600px;
+    
 }
 
+.fa-instagram-square{
+    font-size: 30px;
+    margin-right:10px;
+    
+}
+.fa-facebook-square{
+    font-size: 30px;
+    margin-right:10px;
+}
+.fa-twitter-square{
+    font-size: 30px;
+    margin-right:10px;
+}
+.fa-youtube-square{
+    font-size: 30px;
+    margin-right:10px;
+}
 /* copyright text style */
 .cp-text{   
     color: rgba(0,0,0,.7); text-shadow: 0 1px rgba(255, 255, 255, 0.1);
-    padding-left: 120px;
+    padding-left: 80px;
+    padding-bottom:5px ;
     text-align: center;   
+}
+
+@media only screen and (max-width:688px){
+    body{
+        width: 100%;
+    }
+   
+    header{
+    
+     width: 200%;
+     height: 100%;
+    }
+    .Heading-Slogan-Image{
+        width: 100%;
+        flex-direction: column;
+        padding-left:100px;
+    }
+    .top-players{
+        grid-template-columns: repeat(1,330px);
+        flex-direction: column;
+       
+       
+        
+    }
+    
+    .player-information{
+        width: 100%;
+        flex-direction: column;
+        margin: 0px;
+    }
+    .All-news{
+    width:100%;  
+    }
+    .News{
+        flex-direction: column;   
+        width: 100%;
+     }
+    .News img{
+        padding-top:50px ;
+        width:100%;
+        height: 100%;
+           }
+    .footer-icon{
+
+        padding-right: 500px;
+        margin-left:300px;
+    }
+    .footer-football-name{
+       padding-left: 250px;
+    }
+    footer{
+       width:100%;
+
+    }
+    .cp-text{
+        width: 100%;
+        padding-left: 200px;
+
+    }
+
 }
