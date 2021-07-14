@@ -194,7 +194,7 @@ margin-right: 15px;
     position: absolute;
     width: 567px;
     height: 427px;
-    left: 70px;
+   
     display: none;
 
 }
@@ -220,7 +220,7 @@ margin-right: 15px;
     overflow: hidden;
     
     }
-.News-Image-hover:hover .Writing{
+.News-Image-hover:hover .Messi-Image-Paragraph{
         display: block;
         background-color: rgba(0, 0, 0, 0.651);
         color:white;
@@ -320,6 +320,10 @@ margin-right: 15px;
         width:100%;
         height: 100%;
            }
+    .Messi-Image-Paragraph{
+        width:100%;
+       
+    }       
     .footer-icon{
 
         padding-right: 500px;
