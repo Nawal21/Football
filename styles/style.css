@@ -1,0 +1,211 @@
+/* common style */
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color:#EFEFEE;
+}
+
+
+/* banner blue color background style */
+.slogan{
+    /* position: absolute; */
+    width: 1440px;
+    height: 677px;
+    background: #2D25A0;   
+}
+/* banner style */
+.Heading-Slogan-Image{
+    display: flex;
+    justify-content: center;
+    /* padding-right: 80px; 
+    padding-top: 137px; */
+}
+/* banner slogan style */
+.Copa-America{
+    
+    width: 485px;
+    height: 230px;
+
+    color: white;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 64px;
+    line-height: 80px;
+    
+    display: block;
+    padding-top: 155px ;
+    padding-left: 156px;
+}
+.Live-Button{
+    padding-top:27px ;
+    padding-left: 156px;
+}
+.Watch-Live-Button{
+    text-decoration: none;
+    background-image: linear-gradient(rgb(51, 99, 255),rgb(0, 225, 255));
+    color: ghostwhite;
+    width: 168px;
+    height: 44px;
+    font-weight: 700;
+    padding: 10px 28px;
+    border-radius: 5px;
+}
+.Watch-Live-Button:hover{
+    background-image: linear-gradient(rgba(247, 97, 59, 0.911),rgb(255, 251, 1));
+    color: rgba(255, 255, 255, 1);
+    box-shadow: 0 5px 10px rgba(243, 72, 4, 0.842);
+}
+ 
+
+/* HeadingColor change style */
+.Heading-hover:hover{
+ color: red;
+}
+/* Football player image hover style */
+.Copa-America-Player:hover{
+    transform: scale(1.1) rotate(10deg);
+    transition: transform 1s ease-in-out;
+
+}
+
+/* banner image style */
+.Copa-America-Player img{
+    height:438px;
+    width: 556px;
+    padding-top: 142px ;
+    padding-right: 163px;
+    padding-bottom: 97px;
+}
+/* Watch Live button styles */
+
+
+.players{
+  display: flex;
+  padding-left: 180px;
+  padding-top: 70px;
+}
+.top-players{
+    display: grid;
+    grid-template-columns: repeat(3,330px);
+    row-gap: 27px;
+    column-gap:30px;
+    
+}
+
+.player-information{
+    width: 330px;
+    height: 474px;
+    left: 180px;
+    top: 747px;
+    background: #FFFFFF;
+    border-radius: 10px;
+    text-align:left
+
+}
+/* player information box style */
+.player-information img{
+    padding-top: 10%;
+    padding-left:5%;
+    height: 50%;
+    width: 80%;
+    margin-left: 5%;
+    margin-right: 3%;  
+}
+h3{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 40px;
+    align-self: stretch;
+    margin: 10px 0px;
+    padding-bottom: 74px;
+    padding-left: 30px;
+}
+
+/* Latest News Style  */
+
+.News{
+    display: flex;
+    padding-top: 165px;
+    padding-bottom: 158px;
+    padding-left: 182px;
+
+ 
+}
+.News img{
+  
+    width: 567px;
+    height: 427px;
+    padding-left: 69px;
+    /* padding-top: 2889px; */ 
+}
+
+.News-details{
+    
+    width: 466px;
+    height: 309px;
+    padding-top: 59px;
+   
+}
+
+.News-heading{
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 60px;
+}
+.News-Messi{
+    padding-bottom: 25px ;
+}
+/* See News button style */
+.News-Button{
+    text-decoration: none;
+    background-image: linear-gradient(forestgreen,lime);
+    color: ghostwhite;
+    font-weight: 700;
+    padding: 10px 30px;
+    border-radius: 10px;
+}
+.News-Button:hover{
+       
+        color: rgba(255, 255, 255, 1);
+        box-shadow: 0 5px 10px rgba(208, 255, 0, 0.609);
+        
+}
+
+/* footer style */
+footer{
+   
+    width:1440px;
+    background-color: rgba(65, 105, 225, 0.657);    
+}
+/* footer football and logo style */
+.footer-football-name{
+    display: flex;
+    justify-content: center;
+}
+/* fire football logo style */
+.fire-football{
+    width: 160px;
+    height: 140px;
+    transform: rotate(270deg);
+}
+/* footer football letters style */
+.football-footer{
+    font-family: 'Niconne', cursive;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 72px;
+    line-height: 72px;
+   color: rgb(0, 0, 126);
+    padding-top: 65px;
+    padding-left: 30px;
+letter-spacing: 2.01613px;
+}
+
+/* copyright text style */
+.cp-text{   
+    color: rgba(0,0,0,.7); text-shadow: 0 1px rgba(255, 255, 255, 0.1);
+    padding-left: 120px;
+    text-align: center;   
+}
